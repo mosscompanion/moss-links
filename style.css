@@ -24,7 +24,7 @@ body {
   isolation: isolate;
   width: min(100%, 540px);
   margin: 0 auto;
-  padding: clamp(28px, 8vw, 43px) var(--frame-inset) 0;
+  padding: clamp(7px, 2vw, 14px) var(--frame-inset) 0;
   border-radius: clamp(22px, 7vw, 40px);
   background: linear-gradient(90deg, #99886f, #b2a386 0.85%, #fdf8ed 1.15% 98.85%, #b2a386 99.15%, #99886f);
   box-shadow: 0 14px 36px #51382c18;
@@ -54,7 +54,7 @@ body {
 .intro { text-align: center; margin-bottom: 24px; }
 .logo {
   display: block;
-  width: clamp(84px, 24vw, 116px);
+  width: clamp(40px, 17vw, 96px);
   height: auto;
   filter: drop-shadow(0 4px 6px #214d2b30);
 }
