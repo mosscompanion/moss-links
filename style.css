@@ -124,3 +124,24 @@ h2 {
 .arrow { font-size: 1.2rem; font-weight: 600; line-height: 1; }
 .link:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
 .link:hover { border-color: var(--green); background: #edf4e8; }
+.essa-card {
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: var(--paper);
+  box-shadow: 0 2px 0 #51382c12;
+  overflow: hidden;
+}
+.essa-card > .link { border: 0; border-radius: 0; box-shadow: none; }
+.web-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border-top: 1px solid var(--line);
+  color: var(--green-dark);
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.web-link img { width: 20px; height: 20px; object-fit: contain; }
+.web-link:hover { background: #edf4e8; }
+.web-link:focus-visible { outline: 3px solid var(--green); outline-offset: -3px; }
