@@ -87,8 +87,9 @@ h2 {
 }
 .link img { display: block; width: 44px; height: 44px; object-fit: contain; border-radius: 9px; }
 .app-list .link { padding-block: 12px; row-gap: 6px; }
-.app-list .link img { width: clamp(50px, 15vw, 64px); height: clamp(50px, 15vw, 64px); }
+.app-list .link img { width: clamp(32px, 11vw, 44px); height: clamp(32px, 11vw, 44px); }
 .link-name { font-weight: 500; overflow-wrap: anywhere; }
+.app-list .link-name { font-size: clamp(1rem, 5.6vw, 1.55rem); white-space: nowrap; }
 .app-description {
   grid-column: 1 / -1;
   color: var(--brown);
