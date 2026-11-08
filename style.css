@@ -20,13 +20,17 @@ body {
 
 .garden {
   --frame-inset: clamp(12px, 4vw, 24px);
+  --corner-radius: clamp(22px, 7vw, 40px);
   position: relative;
   isolation: isolate;
   width: min(100%, 540px);
   margin: 0 auto;
   padding: clamp(7px, 2vw, 14px) var(--frame-inset) 0;
-  border-radius: clamp(22px, 7vw, 40px);
+  border-radius: var(--corner-radius);
   background: linear-gradient(90deg, #99886f, #b2a386 0.85%, #fdf8ed 1.15% 98.85%, #b2a386 99.15%, #99886f);
+  background-size: 100% calc(100% - 2 * var(--corner-radius));
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 0 14px 36px #51382c18;
   overflow: hidden;
 }
@@ -98,7 +102,7 @@ h2 {
 .link img { display: block; width: 44px; height: 44px; object-fit: contain; border-radius: 9px; }
 .app-list .link { padding-block: 12px; row-gap: 6px; }
 .app-list .link img { width: clamp(32px, 11vw, 44px); height: clamp(32px, 11vw, 44px); }
-.link-name { font-weight: 500; overflow-wrap: anywhere; }
+.link-name { font-family: Fredoka, system-ui, sans-serif; font-weight: 600; overflow-wrap: anywhere; }
 .app-list .link-name { font-size: clamp(1rem, 5.6vw, 1.55rem); white-space: nowrap; }
 .app-description {
   grid-column: 1 / -1;
