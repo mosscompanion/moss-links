@@ -59,17 +59,23 @@ body {
   filter: drop-shadow(0 4px 6px #214d2b30);
 }
 h1 {
+  margin: 0;
+  color: var(--green-dark);
+  font: 600 clamp(2.35rem, 9vw, 3.5rem)/1.06 Fredoka, system-ui, sans-serif;
+}
+.header-link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: clamp(10px, 3vw, 18px);
   white-space: nowrap;
-  margin: 0;
-  color: var(--green-dark);
-  font: 600 clamp(2.35rem, 9vw, 3.5rem)/1.06 Fredoka, system-ui, sans-serif;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 12px;
 }
+.header-link:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
 h2 {
-  margin: 22px 0 10px;
+  margin: 12px 0 10px;
   color: var(--green-dark);
   font: 600 1.3rem/1.2 Fredoka, system-ui, sans-serif;
   text-align: center;
