@@ -85,10 +85,15 @@ h2 {
   box-shadow: 0 2px 0 #51382c12;
 }
 .link img { display: block; width: 44px; height: 44px; object-fit: contain; border-radius: 9px; }
-.app-list .link { padding-block: 12px; }
+.app-list .link { padding-block: 12px; row-gap: 6px; }
 .app-list .link img { width: clamp(50px, 15vw, 64px); height: clamp(50px, 15vw, 64px); }
 .link-name { font-weight: 500; overflow-wrap: anywhere; }
-.link small { display: block; color: var(--brown); font-size: 0.78rem; font-weight: 400; }
+.app-description {
+  grid-column: 1 / -1;
+  color: var(--brown);
+  font-size: 0.875rem;
+  overflow-wrap: anywhere;
+}
 .website { background: var(--sage); border-color: #a7bc9c; }
 .arrow { font-size: 1.2rem; font-weight: 600; line-height: 1; }
 .link:focus-visible { outline: 3px solid var(--green); outline-offset: 3px; }
