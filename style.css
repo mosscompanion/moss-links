@@ -12,18 +12,19 @@
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  padding: clamp(12px, 4vw, 36px);
+  padding: clamp(6px, 2vw, 18px);
   background: var(--cream);
   color: var(--brown);
   font: 400 1rem/1.45 Lexend, system-ui, sans-serif;
 }
 
 .garden {
+  --frame-inset: clamp(12px, 4vw, 24px);
   position: relative;
   isolation: isolate;
-  width: min(100%, 500px);
+  width: min(100%, 540px);
   margin: 0 auto;
-  padding: clamp(28px, 8vw, 43px) clamp(19px, 7vw, 43px) 0;
+  padding: clamp(28px, 8vw, 43px) var(--frame-inset) 0;
   border-radius: clamp(22px, 7vw, 40px);
   background: linear-gradient(90deg, #99886f, #b2a386 0.85%, #fdf8ed 1.15% 98.85%, #b2a386 99.15%, #99886f);
   box-shadow: 0 14px 36px #51382c18;
@@ -46,7 +47,7 @@ body {
   display: block;
   background-position: bottom center;
   aspect-ratio: 6 / 1;
-  margin-inline: calc(-1 * clamp(19px, 7vw, 43px));
+  margin-inline: calc(-1 * var(--frame-inset));
   margin-top: 13px;
 }
 
